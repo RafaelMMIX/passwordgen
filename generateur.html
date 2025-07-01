@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prout</title>
+</head>
+
+<body>
+    <h1>Générateur de mot de passe :D</h1>
+    <div>
+        <div>
+            <input type="checkbox" name="maj" id="">
+            <label for="maj">Inclure des majuscules ?</label>
+        </div>
+        <div>
+            <input type="checkbox" name="chiffres" id="">
+            <label for="chiffres">Inclure des chiffres ?</label>
+        </div>
+        <div>
+            <input type="checkbox" name="speciaux" id="">
+            <label for="speciaux">Inclure des caractères spéciaux ?</label>
+        </div>
+        <div>
+            <input type="range" name="longueur" id="" min="4" max="30">
+            <label for="longueur">Longueur du mot de passe</label>
+        </div>
+    </div>
+    <div>
+        <input type="text" name="password" id="" placeholder="Mot de passe généré" disabled>
+    </div>
+
+    <div><button name="generate">Générer</button> <button name="copy">Copier</button></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
