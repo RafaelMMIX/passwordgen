@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  flex: auto;
+  margin: 1px;
+  padding: 1px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  margin-right: 10px;
+  align-self: center;
+}
+
+label {
+  font-family: Arial, sans-serif;
+  color: #555;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3498db; /* Couleur de fond bleue */
+  color: white; /* Couleur du texte en blanc */
+  padding: 10px 20px; /* Espace intérieur (haut/bas: 10px, gauche/droite: 20px) */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px; /* Coins arrondis de 5 pixels */
+  font-size: 16px; /* Taille du texte */
+  cursor: pointer; /* Curseur en forme de main au survol */
+  transition: background-color 0.3s ease; /* Animation douce de la couleur de fond */
+}
+
+button:hover {
+  background-color: #2980b9; /* Couleur de fond plus foncée au survol */
+  transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
