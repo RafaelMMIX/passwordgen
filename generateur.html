@@ -5,35 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prout</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Générateur de mot de passe :D</h1>
-    <div>
+    <h1>Générateur de mot de passe [2/4]</h1>
+    <div class="tout">
         <div>
-            <input type="checkbox" name="maj" id="">
-            <label for="maj">Inclure des majuscules ?</label>
+            <div>
+                <input type="checkbox" name="maj" id="">
+                <label for="maj">Inclure des majuscules ?</label>
+            </div>
+            <div>
+                <input type="checkbox" name="chiffres" id="">
+                <label for="chiffres">Inclure des chiffres ?</label>
+            </div>
+            <div>
+                <input type="checkbox" name="speciaux" id="">
+                <label for="speciaux">Inclure des caractères spéciaux ?</label>
+            </div>
+            <div>
+                <input type="range" name="pwdLengthSlider" id="" min="4" max="30" value="8">
+                <span id="error-msg"></span>
+                <input type="number" name="pwdLengthIn" id="" min="4" max="30" value="8">
+                <label for="longueur">Longueur du mot de passe</label>
+            </div>
         </div>
-        <div>
-            <input type="checkbox" name="chiffres" id="">
-            <label for="chiffres">Inclure des chiffres ?</label>
-        </div>
-        <div>
-            <input type="checkbox" name="speciaux" id="">
-            <label for="speciaux">Inclure des caractères spéciaux ?</label>
-        </div>
-        <div>
-            <input type="range" name="longueur" id="" min="4" max="30">
-            <label for="longueur">Longueur du mot de passe</label>
-        </div>
+
     </div>
+
     <div>
         <input type="text" name="password" id="" placeholder="Mot de passe généré" disabled>
     </div>
 
-    <div><button name="generate">Générer</button> <button name="copy">Copier</button></div>
+    <div><button name="generate" class="prout">Générer</button> <button name="copy" class="prout2">Copier</button></div>
 
     <script src="script.js"></script>
+
+
 </body>
 
 </html>
